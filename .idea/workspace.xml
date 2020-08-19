@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df94c52f-b86a-4afc-91f2-25c93f4a565c" name="Default Changelist" comment="">
+    <list default="true" id="df94c52f-b86a-4afc-91f2-25c93f4a565c" name="Default Changelist" comment="Create validation for registration and authentication:&#10;&#10;  - add validationSchemes.js&#10;  - add validator.js">
+      <change afterPath="$PROJECT_DIR$/src/api/rest/restController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/browserHistory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +17,39 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Sass File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="review" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -29,17 +65,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/reducers" />
+      <recent name="$PROJECT_DIR$/src/assets/styles" />
+      <recent name="$PROJECT_DIR$/public/staticImages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/staticImages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Client start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
-    <configuration name="npm start" type="js.build_tools.npm">
+    <configuration name="Client start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -49,6 +103,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.Client start" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -60,17 +118,271 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597255725961</updated>
-      <workItem from="1597255733573" duration="1532000" />
+      <workItem from="1597255733573" duration="5536000" />
+      <workItem from="1597419791265" duration="15985000" />
+      <workItem from="1597483321205" duration="19526000" />
+      <workItem from="1597522014320" duration="9462000" />
+      <workItem from="1597572382977" duration="11295000" />
+      <workItem from="1597590844206" duration="838000" />
+      <workItem from="1597594026672" duration="30987000" />
+      <workItem from="1597626797035" duration="9702000" />
+      <workItem from="1597682196055" duration="18734000" />
+      <workItem from="1597770418407" duration="22351000" />
+      <workItem from="1597795034900" duration="12504000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1597258945918</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597258945918</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create actions for Registration and Authentication:&#10;&#10;  - add actionCreator.js&#10;  - add actionTypes.js">
+      <created>1597805456791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597805456791</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create registration page:&#10;&#10;  - add RegistrationPage.js&#10;  - add LoginRegistrationPages.module.sass">
+      <created>1597805579716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597805579716</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create login page:&#10;&#10;  - add LoginPage.js">
+      <created>1597805620559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597805620559</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create one form for registration and authentication:&#10;&#10;  - add Form.js&#10;  - add FormInput.js&#10;  - add Form.module.sass">
+      <created>1597805761332</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597805761332</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create reducers for registration and authentication:&#10;&#10;  - add authReducer.js&#10;  - add userReducer.js">
+      <created>1597805859237</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597805859237</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create sagas for registration and authentication:&#10;&#10;  - add authSaga.js&#10;  - add userSaga.js">
+      <created>1597805909871</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597805909871</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create validation for registration and authentication:&#10;&#10;  - add validationSchemes.js&#10;  - add validator.js">
+      <created>1597805974025</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597805974025</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create products page for view catalog:&#10;&#10;  - add ProductPage.js&#10;  - add ProductPage.module.sass">
+      <created>1597806305957</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806305957</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Create productsList page for products html-elements:&#10;&#10;  - add ProductsList.js&#10;  - add ProductsList.module.sass">
+      <created>1597806404052</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806404052</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Create productItem component for view the product:&#10;&#10;  - add ProductsItem.js&#10;  - add ProductsItem.module.sass">
+      <created>1597806503786</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806503786</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Create productInfo component for render information about product:&#10;&#10;  - add ProductInfo.js&#10;  - add ProductInfo.module.sass">
+      <created>1597806583255</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806583255</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create reducers for getting products and descriptions:&#10;&#10;  - add getProductByIdReducer.js&#10;  - add getProductsReducer.js">
+      <created>1597806664465</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806664465</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Create products saga:&#10;&#10;  - add productsSaga.js">
+      <created>1597806709463</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806709463</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Create review form for creating review:&#10;&#10;  - add FormReview.js&#10;  - add FormReview.module.sass">
+      <created>1597806900572</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806900572</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Create interceptor for add token to http-header requests:&#10;&#10;  - add interceptor.js">
+      <created>1597806992172</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806992172</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Create store configuration and root saga:&#10;&#10;  - add configureStore.js&#10;  - add setup.js&#10;  - add rootSaga.js">
+      <created>1597807159538</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807159538</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Create index reducer:&#10;&#10;  - add reducers/index.js">
+      <created>1597807241717</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807241717</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Create Home page and change App:&#10;&#10;  - add index.js&#10;  - add Home.js&#10;  - change App.js">
+      <created>1597807322399</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807322399</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Create header page:&#10;&#10;  - add Header.js&#10;  - add Header.module.sass">
+      <created>1597807360358</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807360358</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Create Error and NotFound components for intercept errors:&#10;&#10;  - add Error.js&#10;  - add Error.module.sass&#10;  - add NotFound.js&#10;  - add NotFound.module.sass">
+      <created>1597807448502</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807448502</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Create Spinner and TryAgain components for waiting loading and intercept errors:&#10;&#10;  - add Spinner.js&#10;  - add Spinner.module.sass&#10;  - add TryAgain.js&#10;  - add TryAgain.module.sass">
+      <created>1597807567593</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807567593</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Create BackButton component:&#10;&#10;  - add BackButton.js&#10;  - add BackButton.module.sass">
+      <created>1597807606672</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807606672</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Create static images">
+      <created>1597807656928</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807656928</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Create constants and common styles">
+      <created>1597807713299</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1597807713299</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Create actions for Registration and Authentication:&#10;&#10;  - add actionCreator.js&#10;  - add actionTypes.js" />
+    <MESSAGE value="Create registration page:&#10;&#10;  - add RegistrationPage.js&#10;  - add LoginRegistrationPages.module.sass" />
+    <MESSAGE value="Create login page:&#10;&#10;  - add LoginPage.js" />
+    <MESSAGE value="Create one form for registration and authentication:&#10;&#10;  - add Form.js&#10;  - add FormInput.js&#10;  - add Form.module.sass" />
+    <MESSAGE value="Create reducers for registration and authentication:&#10;&#10;  - add authReducer.js&#10;  - add userReducer.js" />
+    <MESSAGE value="Create sagas for registration and authentication:&#10;&#10;  - add authSaga.js&#10;  - add userSaga.js" />
+    <MESSAGE value="Create validation for registration and authentication:&#10;&#10;  - add validationSchemes.js&#10;  - add validator.js" />
+    <MESSAGE value="Create products page for view catalog:&#10;&#10;  - add ProductPage.js&#10;  - add ProductPage.module.sass" />
+    <MESSAGE value="Create productsList page for products html-elements:&#10;&#10;  - add ProductsList.js&#10;  - add ProductsList.module.sass" />
+    <MESSAGE value="Create productItem component for view the product:&#10;&#10;  - add ProductsItem.js&#10;  - add ProductsItem.module.sass" />
+    <MESSAGE value="Create productInfo component for render information about product:&#10;&#10;  - add ProductInfo.js&#10;  - add ProductInfo.module.sass" />
+    <MESSAGE value="Create reducers for getting products and descriptions:&#10;&#10;  - add getProductByIdReducer.js&#10;  - add getProductsReducer.js" />
+    <MESSAGE value="Create products saga:&#10;&#10;  - add productsSaga.js" />
+    <MESSAGE value="Create review form for creating review:&#10;&#10;  - add FormReview.js&#10;  - add FormReview.module.sass" />
+    <MESSAGE value="Create interceptor for add token to http-header requests:&#10;&#10;  - add interceptor.js" />
+    <MESSAGE value="Create store configuration and root saga:&#10;&#10;  - add configureStore.js&#10;  - add setup.js&#10;  - add rootSaga.js" />
+    <MESSAGE value="Create index reducer:&#10;&#10;  - add reducers/index.js" />
+    <MESSAGE value="Create Home page and change App:&#10;&#10;  - add index.js&#10;  - add Home.js&#10;  - change App.js" />
+    <MESSAGE value="Create header page:&#10;&#10;  - add Header.js&#10;  - add Header.module.sass" />
+    <MESSAGE value="Create Error and NotFound components for intercept errors:&#10;&#10;  - add Error.js&#10;  - add Error.module.sass&#10;  - add NotFound.js&#10;  - add NotFound.module.sass" />
+    <MESSAGE value="Create Spinner and TryAgain components for waiting loading and intercept errors:&#10;&#10;  - add Spinner.js&#10;  - add Spinner.module.sass&#10;  - add TryAgain.js&#10;  - add TryAgain.module.sass" />
+    <MESSAGE value="Create BackButton component:&#10;&#10;  - add BackButton.js&#10;  - add BackButton.module.sass" />
+    <MESSAGE value="Create static images" />
+    <MESSAGE value="Create constants and common styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create constants and common styles" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="205" y="40" width="1247" height="847" key="CommitChangelistDialog2" timestamp="1597258723604">
+    <state x="428" y="124" width="800" height="677" key="#ESLint" timestamp="1597430419221">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="205" y="40" width="1247" height="847" key="CommitChangelistDialog2/67.27.1533.873@67.27.1533.873" timestamp="1597258723604" />
+    <state x="428" y="124" width="800" height="677" key="#ESLint/67.27.1533.873@67.27.1533.873" timestamp="1597430419221" />
+    <state x="291" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597426348465">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="291" y="120" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1533.873@67.27.1533.873" timestamp="1597426348465" />
+    <state x="566" y="211" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597499203236">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="566" y="211" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1533.873@67.27.1533.873" timestamp="1597499203236" />
+    <state x="204" y="39" width="1247" height="847" key="CommitChangelistDialog2" timestamp="1597807827742">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="204" y="39" width="1247" height="847" key="CommitChangelistDialog2/67.27.1533.873@67.27.1533.873" timestamp="1597807827742" />
+    <state x="210" y="99" width="1226" height="728" key="DiffContextDialog" timestamp="1597805315906">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="210" y="99" width="1226" height="728" key="DiffContextDialog/67.27.1533.873@67.27.1533.873" timestamp="1597805315906" />
+    <state width="1487" height="230" key="GridCell.Tab.0.bottom" timestamp="1597804930097">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1487" height="230" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1597804930097" />
+    <state width="1487" height="230" key="GridCell.Tab.0.center" timestamp="1597804930096">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1487" height="230" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1597804930096" />
+    <state width="1487" height="230" key="GridCell.Tab.0.left" timestamp="1597804930096">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1487" height="230" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1597804930096" />
+    <state width="1487" height="230" key="GridCell.Tab.0.right" timestamp="1597804930097">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1487" height="230" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1597804930097" />
+    <state x="428" y="198" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1597807040300">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="428" y="198" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1533.873@67.27.1533.873" timestamp="1597807040300" />
+    <state x="496" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1597774238179">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="496" y="212" width="672" height="678" key="search.everywhere.popup/67.27.1533.873@67.27.1533.873" timestamp="1597774238179" />
   </component>
 </project>
