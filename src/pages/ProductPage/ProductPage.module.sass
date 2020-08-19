@@ -1,0 +1,215 @@
+@import "../../assets/breakpoints"
+@import '../../assets/flexConstants'
+
+@mixin _font($font-weight, $size)
+  font-family: "Nunito", sans-serif
+  font-weight: $font-weight
+  font-size: $size
+
+span
+  @include _font(500, 14px)
+
+.containerSpinner
+  @extend .flexCenter
+  height: 100vh
+  flex: 1
+  align-self: stretch
+
+.mainInfoContainer
+  @extend .flexCenter
+  flex-direction: column
+  margin: 0 auto
+  @media(max-width: 1200px)
+    width: auto
+  @media(max-width: 680px)
+    align-items: center
+    flex-direction: column
+
+  .mainContainerWrapper
+    width: 70%
+    margin: 0 auto
+
+    .backButtonsContainer
+      margin: 10px auto 5px 40px
+      @media(max-width: 680px)
+        margin-left: 5px
+
+    .infoContainer
+      @extend .flexColumnCenter
+      box-shadow: 0 5px 10px 3px rgba(0,0,0,0.1)
+      margin: 20px 40px 40px
+      flex: 1 1
+      align-items: flex-start
+      justify-content: flex-start
+      @media(max-width: 680px)
+        width: auto
+        margin: 10px
+        align-self: stretch
+
+      .buttonsContainer
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        align-self: stretch
+        background-color: #f3f3f3
+        @include _font(500, 16px)
+
+        .btn
+          cursor: pointer
+          background-color: #6b8ab1
+          margin-right: 7px
+          padding: 11px 15px
+          border: 1px solid transparent
+          font-weight: 700
+          color: white
+          border-radius: 4px 4px 0 0
+          text-transform: capitalize
+          &:hover
+            background-color: rgba(176, 196, 222,0.8)
+
+        .activeBtn
+          background-color: white
+          color: #333
+          &:hover
+            background-color: white
+
+      .descriptionContainer
+        width: 100%
+
+        .productContainer
+          @extend .flexCenter
+          align-self: stretch
+          border-top: 1px solid #f3f3f3
+          padding: 15px
+          position: relative
+          @media(max-width: $lg)
+            flex-direction: column
+            align-items: center
+          @media(max-width: 870px)
+            position: initial
+
+          .imageAndRatingContainer
+            margin-top: 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+            flex: 2
+
+            .productImages
+              width: 350px
+              @media(max-width: $lg)
+                width: 250px
+
+            .creativeRating
+              display: flex
+              margin-top: 5px
+              align-items: center
+
+          .textContainer
+            display: flex
+            flex-direction: column
+            justify-content: center
+            flex: 1
+            @media(max-width: $lg)
+              text-align: center
+              align-items: center
+
+            .dataContainer
+              @extend .flexColumnCenter
+              align-self: stretch
+              justify-content: flex-start
+              align-items: flex-start
+              margin-bottom: 10px
+
+              .label
+                margin: 10px 0
+                @include _font(700, 20px)
+                @media(max-width: $lg)
+                  margin: 10px auto
+
+              .data
+                color: #515b5f
+                padding: 2px 0 0
+                margin-bottom: 13px
+                border: none
+                background-color: white
+                resize: none
+                align-self: stretch
+                overflow: visible
+                overflow-wrap: break-word
+                @include _font(500, 18px)
+
+          .createReviewButton
+            position: absolute
+            right: 10px
+            top: 10px
+            max-width: 100px
+            line-height: 21px
+            padding: 10px 15px
+            background: #727cf5
+            color: white
+            cursor: pointer
+            border: 1px solid transparent
+            border-radius: 4px
+            box-shadow: 0 2px 6px 0 rgba(114,124,245,.5)
+            @media(max-width: 870px)
+              right: 10px
+              top: 115px
+
+            &:hover
+              background-color: #4e5bf2
+              border-color: #4250f2
+              transition: background-color .30s
+
+        .createReviewContainer
+          display: flex
+          flex-direction: row
+          justify-content: flex-start
+          align-items: flex-start
+          padding: 15px
+          margin: 25px
+
+      .reviewsContainer
+        box-sizing: border-box
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+
+        .reviewsCount
+          border: 2px solid #dbdbdb
+          margin: 10px
+          padding: 8px
+          border-radius: 5px
+          box-shadow: 0 5px 10px 3px rgba(0,0,0,0.1)
+          @include _font(500, 18px)
+
+        .review
+          box-sizing: border-box
+          width: 97%
+          border: 2px solid #dbdbdb
+          margin: 10px
+          padding: 8px
+          border-radius: 5px
+          box-shadow: 0 5px 10px 3px rgba(0,0,0,0.1)
+          @include _font(500, 18px)
+
+          .text
+            margin-top: 7px
+            word-wrap: break-word
+
+          .creatorInfo
+            margin-top: 10px
+            display: flex
+            justify-content: space-between
+            font-size: 15px
+            color: #2c509a
+
+            .creatorName
+              text-transform: capitalize
+              font-size: 16px
+
+.tryContainer
+  margin: 60px auto 0
+  width: 250px
